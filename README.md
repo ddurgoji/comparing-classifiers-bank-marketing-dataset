@@ -44,6 +44,12 @@ In this project, i am trying to build various classifier models which helps bank
 ##### Accuracy Graph for all models with default parameters
 ![alt text](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/images/accuracy.png?raw=true)
 
+##### Performance report for all models with default parameters
+![alt text](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/images/base_perf.png?raw=true)
+
+##### Performance report for Decision Trees and KNN Classifier model with Default and Hyper parameter tuning models compared
+![alt text](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/images/perf_with_rscv.png?raw=true)
+
 
 #### Evaluation
 * Random Forest Regression model had higher accuracy.

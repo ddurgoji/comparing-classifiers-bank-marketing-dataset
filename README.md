@@ -41,6 +41,10 @@ In this project, i am trying to build various classifier models which helps bank
   * Decision Trees - Accuracy=78.445%
 
 
+##### Accuracy Graph for all models with default parameters
+![alt text](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/images/accuracy.png?raw=true)
+
+
 #### Evaluation
 * Random Forest Regression model had higher accuracy.
 * Plotted a line graph to compare performance of all 4 models that were built.

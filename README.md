@@ -52,45 +52,36 @@ In this project, i am trying to build various classifier models which helps bank
 
 
 #### Evaluation
-* Random Forest Regression model had higher accuracy.
-* Plotted a line graph to compare performance of all 4 models that were built.
+* Decision Tree Classifier model performed well with higher accuracy, precision, recall, AUC.
+* Plotted Bar plot(See above) to compare performances.
 
 
 #### Deployment
-* Developed a Python function which accepts below inputs and provides price prediction using Random Forest Regression model.
-  * Manufacturer
-  * Model
-  * Condition
-  * Cylinders
-  * Fuel
-  * Title status
-  * Transmission
-  * Drive
-  * Size
-  * Type
-  * Paint color </br>
-
-Deployed the Model on Digital Ocean via Flask Server. Below sample API can be used to get used car price prediction.
-```json
-curl -H "content-type: application/json" http://164.90.154.175:8000/predict -X POST -d '{"year": 2022, "manufacturer": "tesla", "model": "model s", "condition": "good", "cylinders": "5 cylinders", "fuel": "electric", "odometer": 3996, "title_status": "clean", "transmission": "other", "drive": "4wd", "size": "full-size", "type": "sedan", "paint_color": "white" }'
-```
-Note: I will stop this server in a weeks time i.e on 09/05/2023.
+* Pending. I will try to deploy this model whenever i get some time.
 
 #### Next Steps
-* Continue to analyse each features further and play with it to improve model performance.
-* Apply XGBoost and other algorightm once we go through it in future modules.
+* Model Tuning to imporve performance by more feature engineering and other techniques like RFE etc.
+* Try using different classifier models like
+  * Guassian Naive Bayes
+  * Random Forest
+  * XGBoost
+  * Use data imputation methods to improve data quality etc.
 
 
-#### Recommendation to Car dealership
-* Year, Odometer are most important items which consumers value most and determines price range of the car.
-* Diesel and Electric can sell for higher prices when compared to gas car.
-* Higher No of cylinders drive the car price up.
-* Title status and condition affects the prices. Salvaged cars are penalized more and brings down prices.
-* rwd are penalized more when compared to fwd/4wd. Rwd cars have lower price points.
-* Automatic and other transmission type have higer price points and Manual reduces the car price.
+#### Conclusion
+##### Summary
+* Decision Tree performed well with higher accuracy, precision, recall and AUC
+* SVC and KNN performed well after Decision Tree.
+* Removing features with unknown label didn't help much with improving the performance.
+* RandomizedSearchCV helped finding the better performing Decision Tree by 5%
+* I felt dataset is very biased towards no class and this makes it very difficult to find a better performing model
 
-These are some of recommendation which car dealership can use to procure used car to drive sales up and provide great customer satisfaction.
-Complete details are in [Jupyter Notebook](https://github.com/ddurgoji/used-cars-price-prediction/blob/main/used-cars-price-prediction.ipynb).
+##### Reflection
+* I believe i have done a good job in this practical application assignment and tried my best to find a better performing model
+* Modelling is an art and i am sure i will improve on it as i work on it more.
+* Current model had 87% of precision so i believe this helps Bank in finding customer who can accept Term deposit with high quality
+
+Complete details are in [Jupyter Notebook](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/comparing-classifiers-bank-marketing-dataset.ipynb).
 
 ## Technologies Used
 Below are some of important technologies used in this project.

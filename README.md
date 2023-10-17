@@ -10,7 +10,7 @@ This repo contains the CRISP-DM framework applied on Bank marketing data set fro
     * Project description
 * [Dataset](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/data/bank-additional-full.csv)
     * This dataset is from [UCI](https://archive.ics.uci.edu/dataset/222/bank+marketing).
-* [CSISP-DM-BANK.pdf](hhttps://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/CRISP-DM-BANK.pdf)
+* [CSISP-DM-BANK.pdf](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/CRISP-DM-BANK.pdf)
     * Contains technical paper on Bank marketing data mining.
 
 ## Summary
@@ -83,10 +83,18 @@ Banks can focus on targeting customers with high consumer price index and euribo
 * RandomizedSearchCV helped finding the better performing Decision Tree by 5%
 * I felt dataset is very biased towards no class and this makes it very difficult to find a better performing model
 * I believe i have done a good job in this practical application assignment and tried my best to find a better performing model
-* Modelling is an art and i am sure i will improve on it as i work on it more.
+* Modelling is an art and i am sure i will improve on it as i work more on it.
 * Current model had 87% of precision so i believe this helps Bank in finding customer who can accept Term deposit with high quality
 
-Complete details are in [Jupyter Notebook](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/comparing-classifiers-bank-marketing-dataset.ipynb).
+##### Improvements
+* **Model Tuning to imporve performance by applying more feature engineering and other techniques like RFE etc.**
+* Try using different classifier models like
+    * Guassian Naive Bayes
+    * Random Forest
+    * XGBoost
+    * Use data imputation methods to improve data quality etc.
+
+Complete Analysis, Models and other details are in [Jupyter Notebook](https://github.com/ddurgoji/comparing-classifiers-bank-marketing-dataset/blob/main/comparing-classifiers-bank-marketing-dataset.ipynb).
 
 ## Technologies Used
 Below are some of important technologies used in this project.

@@ -70,13 +70,18 @@ In this project, i am trying to build various classifier models which helps bank
 
 #### Conclusion
 ##### Summary
+In this practical application project, I created multiple machine learning classifier models that predicts likelyhood of clients who would subscribe to a bank's term deposit. The best model was Decision Tree classifier with optimized hyperparameters. This model's performance is 86.36%.
+
+This model had a precision of 0.8734 divided by a prevalence of 0.50 gives us 1.74, which means that the machine learning model helps us 1.74  times better than randomly guessing. The model was able to catch 60% of customers that will subscribe to a term deposit.
+
+Banks can focus on targeting customers with high consumer price index and euribor3m(3 month indicator for paying off loans) as they have high importance features for the model and business.
+
+##### Reflection
 * Decision Tree performed well with higher accuracy, precision, recall and AUC
 * SVC and KNN performed well after Decision Tree.
 * Removing features with unknown label didn't help much with improving the performance.
 * RandomizedSearchCV helped finding the better performing Decision Tree by 5%
 * I felt dataset is very biased towards no class and this makes it very difficult to find a better performing model
-
-##### Reflection
 * I believe i have done a good job in this practical application assignment and tried my best to find a better performing model
 * Modelling is an art and i am sure i will improve on it as i work on it more.
 * Current model had 87% of precision so i believe this helps Bank in finding customer who can accept Term deposit with high quality

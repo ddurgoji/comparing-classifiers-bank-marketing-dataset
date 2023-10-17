@@ -1,5 +1,5 @@
 # Project Title
-Comparing Classifiers
+Comparing Classifiers - Bank marketing dataset
 
 ## Description
 This repo contains the CRISP-DM framework applied on Bank marketing data set from [UCI](https://archive.ics.uci.edu/dataset/222/bank+marketing)
